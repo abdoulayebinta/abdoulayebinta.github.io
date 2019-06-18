@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="./images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/card.css" />
 	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
@@ -24,16 +25,43 @@
 		root.setAttribute('class', 'ff');
 	};
 	</script>
+	<style>
+		 body {padding: 77px}
+	</style>
 </head>
 
 <body class="demo-2">
+	<!-- My Custom code -->
+	<!-- Header and Navigaton -->
+    <header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="./index.html">
+					<img src="./images/logo3.png" height="68" width="350">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+					<li class="nav-item"><a href="./cv.html" class="nav-link">CV</a></li>
+					<li class="nav-item"><a href="https://abdoulayebinta.github.io/blog/" target="_blank" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="./photos.html" class="nav-link">Photos</a></li>
+					<li class="nav-item"><a href="https://gist.github.com/abdoulayebinta" target="_blank"  class="nav-link" >My Gists</a></li>
+					<li class="nav-item"><a href="./about.html" class="nav-link">About Me</a></li>
+					<li class="nav-item"><a href="./contact.html" class="nav-link">Contact Me</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>  <!-- End Header and Navigaton -->
+	<!-- End of mu custom code -->
 	<div class="container">
 		<header class="codrops-header">
-			<h1>Projects</h1>
+			<h1 style="padding-bottom: 10px">Projects</h1>
 			<blockquote>“I have not failed. I’ve just found 10,000 ways that won’t work.”<br>
 				― Thomas A. Edison
-			</blockquote>
-			
+			</blockquote>	
 		</header>
 		<div class="content">
 			<!-- trianglify pattern container -->
@@ -58,7 +86,7 @@
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/1.png" alt="author01" />
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
 									<span class="meta__author">Abdoulaye Binta Bah</span>
 									<span class="meta__date">06/19/2015</span>
 								</div>
@@ -90,16 +118,88 @@
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/2.png" alt="author02" />
-									<span class="meta__author">Frank Posterius</span>
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
+									<span class="meta__author">Abdoulaye Binta Bah</span>
 									<span class="meta__date">06/16/2015</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+								<div class="meta">
+									<p>Tech stack: R, Python, PostgreSQL, SQL, CouchDB, RMarkdown, JSON, ElasticSearch</p>
+								</div>
+								<h2>Introduction to Data & Analytics</h2>
+								<p>
+									This project is intended to provide an overview of different type of data and 
+									database technologies. The focus is on gaining the skills needed to create a 
+									complete analysis from two disparate data sources. I worked with data sets 
+									that are relevant to public health in Africa.
+								</p>
+								<p>
+									Nowadays, everyone has to deal with mounds of data. People who possess a toolbox of data 
+									analysis skills have a <strong>massive edge</strong> on everyone else, because they 
+									understand what to <strong>do</strong> with all that stuff. 
+									They know how to translate raw numbers into intelligence that <strong>drives real-world 
+									action</strong>. They know how to <strong>break down and structure</strong> complex 
+									problems and data sets to get right to the heart of the problems in their business.
+								</p>
+								<h2>Use Case</h2>
+								<p>
+									Affordable food prices are essential to maintaining good nutrition in a population. 
+									Local market price swings are frequently reported in the news.
+								</p>
+								<p>
+									The use case involves combining a food market price dataset from the 
+									<a href="https://data.humdata.org/dataset/wfp-food-prices">United Nations Global World Food Price database</a>
+									with the <a href="http://">World Health Organization’s Number of Ebola Cases and Deaths in Affected Countries dataset</a>. 
+									Both datasets have already been downloaded from the <a href="https://data.humdata.org/">Humanitarian Data Exchange (HDX)</a>.
+								</p>
+								<p>
+									The analysis uses <a href="https://www.r-project.org/">R</a> to simultaneously visualize the monthly average price of locally-grown rice 
+									in five Guinea retail markets compared with the monthly average cumulative number of confirmed Ebola 
+									cases. The goal is to determine if there is a possible <strong>correlation</strong> between the 2014 
+									Ebola outbreak and the price of rice that would justify further research. 
+									Prices swings are frequently due to changes in exchange rates and to crop harvest levels. 
+									The analysis is intented to be exploratory in nature.
+								</p>
+								<p>
+									The source code for the project can be  found on my Github profile.
+								</p>
+								<h3>Plan 1</h3>
+								<ol>
+									<li>Recognize common types of data structures</li>
+									<li>Obtain datasets from a public data portal <a href="https://data.humdata.org/">HDX</a></li>
+									<li>Evaluate data sets prior to using them </li>
+									<li>Use the pgAdmin III program to interact with PostgreSQL</li>
+									<li>View and manage the objects in a PostgreSQL database</li>
+									<li>Load data into PostgreSQL from an external file</li>
+									<li>Create PostgreSQL roles (users) and give them privileges</li>
+									<li>Backup a PostgreSQL database to safequard data</li>
+									<li>Restore a PostgreSQL database to recover data</li>
+									<li>Create and run SQL queries in PostgreSQL</li>
+								</ol>
+
+								<h3>Plan 2</h3>
+								<ol>
+									<li>Describe the different types of analytics and their audiences</li>
+									<li>Recognize when to use R and when to use other tools</li>
+									<li>Use the RStudio IDE with R language</li>
+									<li>View and interpret a reproducible report create with RMarkdown</li>
+									<li>Read data from a PostgreSQL table using R</li>
+									<li>Read data from a CSV file using R</li>
+									<li><strong>Wrangle</strong> data do different data sets can be joined</li>
+									<li>Create a series of plots to visualize data</li>
+								</ol>
+								<h3>Plan 3</h3>
+									<ol>
+										<li>Connect to CouchDB</li>
+										<li>Create a CouchDB document database</li>
+										<li>Use Python to export a PostgreSQL table to a JSON file</li>
+										<li>JSON data into CouchDB</li>
+										<li>Use the Linux 'curl' utility to retrieve data from CouchDB</li>
+										<li>Use the R 'Curl' library to retrieve data from CouchDB</li>
+										<li>Transfer JSON documents from CouchDB to ElasticSearch so they can be indexed</li>
+										<li>Identify additional sources of infromation and training</li>
+									</ol>
+								</h3>
+	
 							</div>
 						</div>
 					</div>

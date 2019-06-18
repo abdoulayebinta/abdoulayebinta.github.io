@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 $('.myRole').hover(
     function() {
-        $(this).html("<strong>I am your next employe.</strong>");
+        $(this).html("<strong>Welcome to my personal web site!</strong>");
     }, 
     function() {
         $(this).html("<h4>I am Abdoulaye Binta Bah</h4>");
