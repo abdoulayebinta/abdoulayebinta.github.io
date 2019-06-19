@@ -52,8 +52,8 @@ h1 {
     filter: grayscale(100%);
     transition: 1s;
     padding: 15px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height:180px;
 }
 
 .gallery img:hover {
