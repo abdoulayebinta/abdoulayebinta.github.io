@@ -186,3 +186,14 @@
 		padding: 25px 0px 100px;
 	}
 }
+
+/* Custom CSS */
+.etl {
+	border: 1px dashed #777778; 
+	padding: 10px;
+	overflow: auto;	
+}
+
+.etltool {
+	float: right;
+}
