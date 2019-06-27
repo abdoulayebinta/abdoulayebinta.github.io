@@ -76,7 +76,7 @@
 									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
 								</clipPath>
 							</defs>
-							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="images/a.jpg"></image>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="images/dw.png"></image>
 						</svg>
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
@@ -88,14 +88,148 @@
 								<div class="meta">
 									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
 									<span class="meta__author">Abdoulaye Binta Bah</span>
-									<span class="meta__date">06/19/2015</span>
+									<span class="meta__date">05/01/2018</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+								<h3>Strengthening Liberian Human Capacity for Health Services</h3>
+								<hr/>
+								<h4>The problem we tried to solve with this project?</h4>
+								<br>
+								<p>The Liberian Ministry of Health was experiencing growing pains (siloed information, fragmented data). They had multiple independants health systems to gather data from, but the systems used to aggregate and analyze the data were weak and were not interoperable.</p>
+								<p>Some Data Challenges they experienced were:
+									<ul>
+										<li>Manually moving data from heath centers (lowest level) to district to central level (highest level)</li>
+										<li>Separate data silos for health worker, HIV services, human resources, and other special programs</li>
+										<li>Spending time and money on data collection with no ability to leverage it for strategic planning or immediate action</li>
+									</ul>
+								</p>
+								<p>Since the height of the West African Ebola virus outbreak, eHealth Africa (eHA) has been working with the Liberian Ministry of Health (MOH) to rigorously improve nationwide electronic disease reporting systems, laboratory and diagnostic systems, and emergency management operations.</p>
+								<h4>The Solution: a National Data Warehouse</h4>
+								<p>Based on DHIS2 and a National Data Warehouse for data interoperability, the ministry has a clear, efficient system to gather view, and analyze health data at every level (community, district, county, national), and the country has what it needs to adapt and quickly react to changes or stressors in its environment.
+									<ul>
+										<li>Reporting completeness has improved.</li>
+										<li>Data managers use information to assess population health status, and health facilitites adjust their services to better meet their clients' needs.</li>
+										<li>As more facilitites analyze  their data  and act on the findings, the culture of data use continue to grow.</li>
+									</ul>
+								</p>
+								<h4>Data Warehousing, Data Integration and Business Intelligence</h4>
+								<p>A data warehouse is a <strong>digital collection</strong> of <strong>integrated, context-related data</strong> used for the purpose of <strong>intelligent analysis.</strong> <br>Traditionally, a data warehouse is a subject-oriented, integrated, time-variant, and nonvolatile collection of data in support of management's  decision making process.<br> - W.H. Inmon
+								</p>
+								<h4>Techonologies we used to develop the Data Warehouse</h4>
+								<p>
+									<ol>
+										<li>Pentaho Data Integration Community Edition (KETTLE 7.1)</li>
+										<li>PostgreSQL Database 10</li>
+										<li>Mondrian</li>
+										<li>Saiku Analytics </li>
+										<li>Optional: Tableau </li>
+										<li>Pentaho Server</li>
+										<li>DHIS2</li>
+									</ol>
+								</p>
+								<p>We were two engeneers to build this data warehouse with a  <strong>Focus Use Cases</strong> in mind.<br/>
+								<strong>Focus Use Cases</strong><br/>
+								<ul>
+									<li>Facility Overall Utilization</li>
+									<ul><li>We wanted to be able to look at different information to find out why certain health facilities are over-utilized and some facilities are under-utilized </li></ul><br>
+									<li>Facility Utilization Per Subject</li>
+									<ul><li>Birth Delivery Utilization</li><li>Antenatal Care</li><li>Immunization</li><li>Etc.</li></ul>
+								</ul>
+								</p>
+								<p>The Data Warehouse we built supports analysis of:
+									<ul><li>Facility Overall Utilization</li><li>Birth Delivery Utilization</li></ul>
+								</p>
+								<h4>ETL Transformations</h4>
+								<p>ETL Transformation steps:
+									<ul>
+										<li>Create dimension tables - staging</li>
+										<li>Create fact table - staging</li>
+										<li>Create dimension tables, add PK</li>
+										<li>Create fact tables, add PK of dimension tables as FK, add PK</li>
+										<li>Create kettle job to run the entire ETL processes in sequence </li>
+									</ul>
+								</p>
+								<h4>Data Presentation</h4>
+								<p>Connect Data Warehouse with Tableau
+									<ul>
+										<li>Easy to connect</li>
+										<li>Easy to use</li>
+										<li>Powerful Analysis</li>
+										<li>Not free: not a sustainable option for MoH</li>
+									</ul>
+								</p>
+								<p>Connect Data Warehouse with Mondrian / Saiku Analytics
+									<li>More complicated</li>
+									<li>Requires more technical expertise</li>
+									<li>Open Source</li>
+								</p>
+								<h4>Characteristics of the Data Warehouse</h4>
+								<p>
+									<ul>
+										<li>Subject-oriented</li>
+										<ul>
+											<li>Organized around major subjects (in this case in health data)</li>
+											<li>Focus in analyis and modeling</li>
+											<li>Provide a simple and concise view around particular subject issues by excluding data that are not useful in the decision support process </li>
+										</ul>
+										<li>Integrated</li>
+										<ul>
+											<li>Constructed by integrating multiple, heterogenous data sources</li>
+											<li>Data cleaning and data integration techniques are applied</li>
+											<li>Data makes sense, and projects a single point of truth</li>
+										</ul>
+										<li>Time-variant</li>
+										<ul>
+											<li>The time horizon is significantly longer thant that of operational systems</li>
+											<li>The warehouse grows over time, concerned with the preservation of <strong>historical data</strong></li>
+											<li>Every key structure in the data warehouse typically has an element of time</li>
+										</ul>
+										<li>Non-volatile</li>
+										<ul>
+											<li>Data is never removed, no exeception to this rule</li>
+											<li>Data is never altered; one version of truth</li>
+										</ul>
+									</ul>
+								</p>
+								<h4>Data Integration</h4>
+								<p>
+									<ul>
+										<li>Data extraction</li>
+										<li>Data cleansing</li>
+										<li>Data transformation</li>
+										<li>Data loading</li>
+										<li>Data blending</li>
+										<li>Data filtering</li>
+										<li>Data aggregation</li>
+										<li>Data movement</li>
+										<li>Data refresh</li>
+									</ul>
+								</p>
+								<h4>The ETL (Extract Transform and Load) process</h4>
+								<div class="etl">
+									<img class="etltool" src="./images/projects/ETL.jpeg" alt="ETL">
+									ETL is a set of instruction on:
+									<ul>
+										<li>Where to find data</li>
+										<li>What to do with it once you find it</li>
+										<li>And where to stash the results of your efforts</li>
+									</ul>
+								</div><br>
+								<h4>OLAP and Data Models</h4>
+								<p>
+									<ul>
+										<li>Data warehouses are fundamentally structured for <strong>OLAP</strong> (Online analytical processing)</li>
+										<li>OLAP requires a multidimensional model</li>
+										<li>multidimensional modeling facilitates OLAP, analytics and more</li>
+									</ul>
+								</p>
+								<h4>From Spreadsheets and Tables to Cube</h4>
+								<div class="etl">
+									<img src="./images/projects/cube.PNG" alt="Cube" class="etltool">
+									<ul>
+										<li>The warehouses data model renders data as a cube</li>
+										<li>Cube data models represent data in multiple dimensions</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -217,21 +351,15 @@
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
 							<div class="card__caption">
-								<h2 class="card__title">A mild winter</h2>
-								<p class="card__subtitle">Helen's view on wells</p>
+								<h2 class="card__title">Symptom Checker</h2>
+								<p class="card__subtitle">Clinical Decision Support</p>
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/3.png" alt="author03" />
-									<span class="meta__author">Sarah Lester</span>
-									<span class="meta__date">06/16/2015</span>
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
+									<span class="meta__author">Abdoulaye Binta Bah</span>
+									<span class="meta__date">09/16/2016</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 							</div>
 						</div>
 					</div>
@@ -249,21 +377,16 @@
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
 							<div class="card__caption">
-								<h2 class="card__title">Food sources</h2>
-								<p class="card__subtitle">What will we eat in 30 years?</p>
+								<h2 class="card__title">React Redux Project</h2>
+								<p class="card__subtitle">A stock market app</p>
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/4.png" alt="author04" />
-									<span class="meta__author">Lena Bestofos</span>
-									<span class="meta__date">06/14/2015</span>
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
+									<span class="meta__author">Abdoulaye Binta Bah</span>
+									<span class="meta__date">06/14/2019</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+								<p>Comming soon...</p>
 							</div>
 						</div>
 					</div>
@@ -281,21 +404,16 @@
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
 							<div class="card__caption">
-								<h2 class="card__title">Swimming in the ocean</h2>
-								<p class="card__subtitle">A Makrel's story</p>
+								<h2 class="card__title">React Native Project</h2>
+								<p class="card__subtitle">Reducing Traffic Jam</p>
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/5.png" alt="author05" />
-									<span class="meta__author">Michaela Walters</span>
-									<span class="meta__date">06/11/2015</span>
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
+									<span class="meta__author">Abdoulaye Binta Bah</span>
+									<span class="meta__date">07/11/2019</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+								<p>Comming soon...</p>
 							</div>
 						</div>
 					</div>
@@ -313,21 +431,15 @@
 						<div class="card__content">
 							<i class="card__btn-close fa fa-times"></i>
 							<div class="card__caption">
-								<h2 class="card__title">Freedom Fighters</h2>
-								<p class="card__subtitle">When it's too hot to think</p>
+								<h2 class="card__title">Machine Learning</h2>
+								<p class="card__subtitle">Making the almost right decision</p>
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="images/authors/6.png" alt="author06" />
-									<span class="meta__author">Tom Goldman</span>
-									<span class="meta__date">06/10/2015</span>
+									<img class="meta__avatar" src="images/abah1.png" alt="Author:" />
+									<span class="meta__author">Abdoulaye Binta Bah</span>
+									<span class="meta__date">06/10/2019</span>
 								</div>
-								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
-								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
-								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
-								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
-								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
-								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
 							</div>
 						</div>
 					</div>
