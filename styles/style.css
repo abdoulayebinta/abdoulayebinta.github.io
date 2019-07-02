@@ -3,7 +3,7 @@
 .main-content {
     width: 75%;
     height: 100vh;
-    margin: 85px auto 10px auto;
+    margin: 120px auto 10px auto;
     background-image: url(./../images/background-image.jpg);
     background-size: cover;  
 }
