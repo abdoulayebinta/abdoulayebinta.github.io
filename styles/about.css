@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 130px;
+}
+
+.about h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: goldenrod;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 300%;
+}
+
+.about h3 {
+    margin-bottom: 15px;
+}
+
+.contact {
+    list-style-type: none;
+    padding-left: 10px;
+}

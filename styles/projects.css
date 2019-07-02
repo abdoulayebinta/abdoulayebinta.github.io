@@ -1,0 +1,47 @@
+.flipCard {
+    width: 240px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.flipCard > .front {
+    position: absolute;
+    background: #FC0;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flipCard > .back {
+    position: absolute;
+    background: #899ddf7a;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flipCard:hover > .front {
+    -ms-transform: perspective(600px) rotateY(-180deg);
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+.flipCard:hover > .back {
+    -ms-transform: perspective(600px) rotateY(0deg);
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
