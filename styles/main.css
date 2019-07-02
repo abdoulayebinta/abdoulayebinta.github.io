@@ -11,7 +11,7 @@ nav {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 10px;
    
 }
 
@@ -22,8 +22,8 @@ nav ul li {
 } 
 
 .logo {
-    height: 52px;
-    width: 280px;
+    height: 90px;
+    width: 400px;
 }
 
 nav a {
