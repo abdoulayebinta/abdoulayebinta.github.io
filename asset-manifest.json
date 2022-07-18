@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.22cfdc25.css",
-    "main.js": "/static/js/main.3bbf2dd1.js",
+    "main.css": "/static/css/main.8eaef689.css",
+    "main.js": "/static/js/main.b2ebdaf7.js",
     "static/media/bah.png": "/static/media/bah.f60c33237987722cc136.png",
     "static/media/waly-home.png": "/static/media/waly-home.bad2ad0999c9552fd114.png",
     "static/media/docker.png": "/static/media/docker.e47be1663d916505eccd.png",
-    "static/media/futurama.jpg": "/static/media/futurama.4af71f9eece734511ac1.jpg",
+    "static/media/DATATOCARE.png": "/static/media/DATATOCARE.55630ec394efde6d9abf.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/aws.png": "/static/media/aws.95bdee6b9922c9b94fd5.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
@@ -18,11 +18,11 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "static/media/abdbint-white.svg": "/static/media/abdbint-white.91a0180c0dd8fe52e855194fa4525759.svg",
     "index.html": "/index.html",
-    "main.22cfdc25.css.map": "/static/css/main.22cfdc25.css.map",
-    "main.3bbf2dd1.js.map": "/static/js/main.3bbf2dd1.js.map"
+    "main.8eaef689.css.map": "/static/css/main.8eaef689.css.map",
+    "main.b2ebdaf7.js.map": "/static/js/main.b2ebdaf7.js.map"
   },
   "entrypoints": [
-    "static/css/main.22cfdc25.css",
-    "static/js/main.3bbf2dd1.js"
+    "static/css/main.8eaef689.css",
+    "static/js/main.b2ebdaf7.js"
   ]
 }
